@@ -5,8 +5,8 @@ As a user, I needed an application that allowed me to type in a city that allowe
 
 ## Usage
 
-Visit the website via this url:
-Visit the Github repo via this url:
+Visit the website via this url:https://alexanderbarlow.github.io/weather-dashboard/
+Visit the Github repo via this url:https://github.com/AlexanderBarlow/weather-dashboard
 Type desired city in the search bar and the weather will be outputted.
 
 
