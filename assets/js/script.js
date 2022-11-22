@@ -32,30 +32,32 @@ fetch(apiURL)
         var returnedCity = data[0].name;
         localStorage.setItem("city", city);
         lat = data[0].lat;
-        localStorage.setItem("city", lat);
+        localStorage.setItem("lat", lat);
         lon = data[0].lon;
-        localStorage.setItem("city", lon);
+        localStorage.setItem("lon", lon);
         console.log(returnedCity);
         console.log(lat);
         console.log(lon);
-        return;
     });
-    console.log(lat);
-    console.log(lon);
-    console.log(returnedCity);
-    
+
     displayData();
 
 })
 }
 
 function displayData () {
-
-
-
-
-
+    getWeather();
+    city = localStorage.getItem("city");
+    cityNameApply.append(city);
+    lat = localStorage.getItem('lat');
+    console.log(lat);
+    lon = localStorage.getItem('lon', '');
+    console.log(lon);
 };
+
+function getWeather() {
+    
+}
 
 cityInput.addEventListener('submit', formHandler);
 searchButton.addEventListener('click', formHandler);
