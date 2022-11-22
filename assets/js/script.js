@@ -49,6 +49,8 @@ function displayData () {
     getWeather();
     city = localStorage.getItem("city");
     cityNameApply.append(city);
+    let li = document.createElement('li');
+    li.textContent = city;
     lat = localStorage.getItem('lat');
     console.log(lat);
     lon = localStorage.getItem('lon', '');
@@ -56,7 +58,16 @@ function displayData () {
 };
 
 function getWeather() {
+    var weatherURL = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat +'&lon=' + lon +'&appid=' + apiKey
+
+    fetch(weatherURL)
+.then(function(response) {
+    console.log(response);
+    response.json().then(function (data) {
+        console.log(data);
     
+    });
+})
 }
 
 cityInput.addEventListener('submit', formHandler);
