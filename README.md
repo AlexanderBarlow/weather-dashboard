@@ -10,9 +10,8 @@ Visit the Github repo via this url:
 Type desired city in the search bar and the weather will be outputted.
 
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+
+![Website Screehnshot](./assets/images/_C__Users_alexb_bootcamp_challenges_weather-dashboard_index.html.png)
 ## Features
 
 This application pulls data from a weather api with is incorported with user input to dislay the data.
