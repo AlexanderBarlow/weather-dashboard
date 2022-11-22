@@ -6,13 +6,6 @@ var tempApply = document.querySelectorAll('temp');
 var windApply = document.querySelectorAll('wind');
 var humidityApply = document.getElementsByClassName('humidity');
 var userForm = document.getElementsByClassName('form-control')
-var city;
-var returnedCity;
-var lat; 
-var lon;
-var temp;
-var wind;
-var humidity;
 var listedCities = document.getElementById('city-list');
 
 
